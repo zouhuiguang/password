@@ -184,7 +184,7 @@ public class RSACoder {
         byte[] decode1=RSACoder.decryptByPrivateKey(code1, privateKey);
         System.out.println("乙方解密后的数据："+new String(decode1)+"");
 
-        System.out.println("===========反向进行操作，乙方向甲方发送数据==============");
+        System.out.println("===========反向进行操作，乙方向甲方发送数据============");
 
         str="乙方向甲方发送数据RSA算法";
 
@@ -192,7 +192,7 @@ public class RSACoder {
 
         //乙方使用公钥对数据进行加密
         byte[] code2=RSACoder.encryptByPublicKey(str.getBytes(), publicKey);
-        System.out.println("===========乙方使用公钥对数据进行加密==============");
+        System.out.println("===========乙方使用公钥对数据进行加密============");
         System.out.println("加密后的数据："+Base64.encode(code2));
 
         System.out.println("=============乙方将数据传送给甲方======================");
